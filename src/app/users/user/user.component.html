@@ -1,0 +1,23 @@
+<h3>Usuario</h3>
+
+<div>
+    <div>
+        <span class='label'>Name:</span> {{data.name}}
+    </div>
+    <div>
+        <span class='label'> Username:</span> {{data.username}}
+    </div>
+    <div>
+        <span class='label'> Email:</span> {{data.email}}
+    </div>
+    <div>
+        <span class='label'> Street:</span> {{data.address.street}}
+    </div>
+</div>
+
+<br><br>
+<div>
+    <button [routerLink]="['/users']"
+            routerLinkActive="router-link-active">
+        Regresar</button>
+</div>

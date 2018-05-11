@@ -1,0 +1,15 @@
+<h3>
+    Listado de usuarios</h3>
+
+<div *ngFor="let item of data"
+     class="">
+
+    <div class='item'>
+        {{item.name}}
+        <br>
+        <a href=""
+           [routerLink]="['userItem', item.id]"
+           routerLinkActive="router-link-active">Cargar data</a>
+    </div>
+
+</div>
